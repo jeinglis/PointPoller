@@ -1,5 +1,5 @@
 //#include <wiringPi.h>
-#include <msp3008.h>
+#include "mcp3008.h"
 #include <stdio.h>
 
 //#define BASE 100
@@ -17,7 +17,7 @@ int main() {
 
 /* Prints the value of the input "0" of the MCP 3008 
     */
-    int value = mcp3008_value(0, clock, MOSI, MISO, cs);
+    int value = mcp3008_value(0, clock, MOSI, MISO, CS);
     printf("%d", value);
 
     //for(chan = 0; chan < 8; chan++);
