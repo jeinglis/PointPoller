@@ -53,7 +53,7 @@ int gpio_read(int pin) { // reads input value from the specified GPIO pin. Retur
   int x;
   if ((x = fgetc(f))!=EOF){
     x = (x==49); /* Returns 1 if the input value is HIGH. (fgetc returns 49 when the input value is HIGH). Returns 0 if it is low.
-		   */
+           */
   }else{
     x = -1;        // -1 is returned when there is an error.
   }
